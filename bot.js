@@ -1,31 +1,3 @@
-
-
-Skip to content
-Using Gmail with screen readers
-
-1 of 33,585
-Bots code
-Inbox
-x
-
-Edgar Núñez <ejnunez13@gmail.com>
-Attachments
-7:49 PM (0 minutes ago)
-to me
-
-Hello, the codes are in a txt file inside this email.
-
---
-photo		
-Edgar J. Núñez P
-Computer Systems Engineering Student, Pontificia Universidad Católica Madre y Maestra
-849-848-1488 | ejnunez13@gmail.com
-
-| enunezperdomo@hotmail.com
-			
-Create your own email signature
-Attachments area
-
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
 
@@ -248,5 +220,3 @@ function getRandomInt(min, max) {
 
 
 exports.respond = respond;
-MarkBots.txt
-Displaying MarkBots.txt.
