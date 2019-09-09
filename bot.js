@@ -1,3 +1,31 @@
+
+
+Skip to content
+Using Gmail with screen readers
+
+1 of 33,585
+Bots code
+Inbox
+x
+
+Edgar Núñez <ejnunez13@gmail.com>
+Attachments
+7:49 PM (0 minutes ago)
+to me
+
+Hello, the codes are in a txt file inside this email.
+
+--
+photo		
+Edgar J. Núñez P
+Computer Systems Engineering Student, Pontificia Universidad Católica Madre y Maestra
+849-848-1488 | ejnunez13@gmail.com
+
+| enunezperdomo@hotmail.com
+			
+Create your own email signature
+Attachments area
+
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
 
@@ -5,16 +33,14 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
-      botRegexSlut = /^\/slut/; botRegexMason = /^\/mason/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
-      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
-      botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
-      siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
-      siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
+        botRegex = /^\/cool guy/;  botRegexDL = /^\/DEP/i;
+      botRegexSC = /^\/SCH/i; botODB = /^\odb/i; botDuck = /^\/duck/;
+      botRegexP = /^\/find/i;  botRegexTw = /^\/twitch/i; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/;
+      botRegexSS = /^\/who is stu/;  botRegexCC = /^\/cool/; botRegexGL = /^\/LG schedule/;
+      botRegexSTP = /^\/stats/;botRegexSTT = /^\/tstats/;botRegexRL = /^\/rule/;
+      botRegexSTD = /^\/standings/;botRegexRK = /^\/rank/; botRegexFA = /^\/free agents/;botRegexMRK = /^\/rookies/;
+      botRegexTD = /^\/trade/; botRegexSG = /^\/sign/; botRegexRLP = /^\/release/;botRegexSLR = /^\/salary/;
+      botRegexRLS = /^\/rules/; botRegexBRK = /^\/breakdown/; botRegexADMIN = /^\/admin/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -22,96 +48,127 @@ function respond() {
     this.res.writeHead(200);
     postMessage(cool());
     this.res.end();
-  }
-  else if(request.text && botRegexSlut.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexProp.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/409x327.jpeg.08b5d95c51bb4897835cfe6b514f2f52.large");
-    this.res.end();
-  }
-  else if(request.text && botRegexKys.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.wikihow.com/Tie-a-Noose");
-    this.res.end();
-  } 
-  else if(request.text && botRegexSlam.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://pbs.twimg.com/profile_images/587294731471757313/ZpI5PfKq.jpg");
-    this.res.end();
-  } 
-  else if(request.text && botRegexDaf.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i3.kym-cdn.com/photos/images/facebook/000/787/356/d6f.jpg");
-    this.res.end();
-  } 
-  else if(request.text && botRegexBrye.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/600x490.jpeg.b31d5153fb474d9bb18dd51b3d650afe.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexGian.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i.imgur.com/9V6ZnvD.png");
-    this.res.end();
-  } 
-  else if(request.text && botRegexScrotes.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1006x1340.jpeg.730381e4280e4028b8375432af14f39f.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexShaki.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/305x375.jpeg.a8dd3aa18c7a4963a553e6dc16bcb100.large");
-    this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    postMessage("http://daddyleagues.com/ggstock/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/tffl/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   
-  else if(request.text && botRegexOW.test(request.text)) {
+
+  
+  else if(request.text && botRegexSTP.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("www.daddyleagues.com/maddenrating/");
+    postMessage("http://daddyleagues.com/tffl/stats/player");
+    this.res.end();
+  }    
+  
+  else if(request.text && botRegexADMIN.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/admin");
+    this.res.end();
+  }  
+  
+  else if(request.text && botRegexSTT.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/stats/team");
     this.res.end();
   } 
-  else if(request.text && botRegexSalt.test(request.text)) {
+  
+    
+  else if(request.text && botRegexRL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/B5BSVqH.png");
+    postMessage("https://docs.google.com/document/d/1geVo5hmcDjujAZPpKvcgSo6D5pzn3SwkjRiLrSDD0rw/edit");
     this.res.end();
   } 
-  else if(request.text && botRegexAd.test(request.text)) {
+    
+  else if(request.text && botRegexRLS.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
-    this.res.end();
-  }
-  else if(request.text && botRegexRules.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
+    postMessage("https://docs.google.com/document/d/1geVo5hmcDjujAZPpKvcgSo6D5pzn3SwkjRiLrSDD0rw/edit");
     this.res.end();
   } 
-  else if(request.text && botRegexGTA.test(request.text)) {
+    
+  else if(request.text && botRegexSTD.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
+    postMessage("http://daddyleagues.com/tffl/standings");
     this.res.end();
   } 
+    
+ else if(request.text && botRegexRK.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/standing/ranking");
+    this.res.end();
+  } 
+    
+  else if(request.text && botRegexFA.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/players?name=&position=all&team=fa");
+    this.res.end();
+  } 
+    
+  else if(request.text && botRegexMRK.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/players?name=&position=all&team=all&rookie=1");
+    this.res.end();
+  } 
+    
+  else if(request.text && botRegexTD.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/frontoffice/trade");
+    this.res.end();
+  } 
+    
+  else if(request.text && botRegexSG.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/frontoffice/sign");
+    this.res.end();
+  } 
+    
+  else if(request.text && botRegexRLP.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/frontoffice/release");
+    this.res.end();
+  } 
+    
+  else if(request.text && botRegexSG.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/frontoffice/salaries");
+    this.res.end();
+  } 
+    
+  else if(request.text && botRegexBRK.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/frontoffice/rosterbreakdown");
+    this.res.end();
+  } 
+      
+ else if(request.text && botRegexCC.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("As cool as the other side of the pillow.");
+    this.res.end();
+  } 
+  
+   else if(request.text && botRegexGL.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/tffl/schedules");
+    this.res.end();
+  } 
+  else if(request.text && botRegexSS.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://cbsmiami.files.wordpress.com/2015/01/452250140.jpg?w=1500");
+    this.res.end();
+  } 
+  
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    
-    postMessage("http://daddyleagues.com/ggstock/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/tffl/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
-    var req = request.text.substring(5,request.text.length);
+    var req = request.text.substring(6,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/ggstock/players?name="+rep+"&position=all&team=all");
-    
+    postMessage("http://daddyleagues.com/tffl/players?name="+rep+"&position=all&team=all");
     this.res.end();
   }  
 
@@ -120,11 +177,7 @@ function respond() {
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
     this.res.end();
   } 
-  else if(request.text && botRegexSb.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://www.reddit.com/r/TheNiceMaddenLeague/");
-    this.res.end();
-  } 
+  
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
     postMessage("¯\\_(ツ)_/¯");
@@ -132,46 +185,21 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1zRLaUZ12vUOORFdNQbPCzJW5T0zFBrkth_osH9b7d34/edit?usp=drivesdk");
+    postMessage("https://docs.google.com/spreadsheets/d/1kJqQWCq3RKiTrd4f71FFNKr-Y0ppJzjk0fSF0rP6Bto/edit?usp=sharing");
     this.res.end();
   } 
-  else if(request.text && botRegexMason.test(request.text)) {
+  else if(request.text && botODB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/845x1170.jpeg.002f5f8a4b6c4afbb858f474f99506ad");
+    postMessage("OBJ*");
     this.res.end();
   } 
   else if(request.text && botDuck.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://media3.giphy.com/media/YCseTHF2I6CCA/giphy.gif");
     this.res.end();
-  }
-  else if(request.text && botRegexCC.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/851x1184.jpeg.330228901f684b0cb46cd1cef6953923");
-    this.res.end();
-  }
-  else if(request.text && botRegexMA32.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/12hVrn7ShR3An6bP5uBF3gaoTQQgVciC-0RqtWVZ39Ls/edit?usp=sharing");
-    this.res.end();
-  }
-  else if(request.text && botRegexTrade.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://docs.google.com/forms/d/e/1FAIpQLSdrbe5iBRaBC7EWoodVm8z6285-dG2EdHXAOMOgz8md8T1jwQ/viewform");
-    this.res.end();
-  }
   
-  else if(request.text && botRegexSiege.test(request.text)) {
-    this.res.writeHead(200);
-    if(0.6 >= Math.random() > 0.3)
-      postMessage(siege1);
-    else if(Math.random() >0.6)
-      postMessage(siege3)
-    else
-      postMessage(siege2);
-    this.res.end();
   }
-  
+
   else {
     console.log("don't care");
     this.res.writeHead(200);
@@ -220,3 +248,5 @@ function getRandomInt(min, max) {
 
 
 exports.respond = respond;
+MarkBots.txt
+Displaying MarkBots.txt.
